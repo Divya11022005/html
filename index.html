@@ -10,14 +10,14 @@
     <center><h1>scholar form</h1></center>
     <hr>
     <center>
-       <form>
+       <form onsubmit="return validateForm(event)">
         <table>
             <tr>
-                <td>Name:</td><td><input type="text" placeholder="enter your name"></td>
+                <td>Name:</td><td><input type="text" id="name" placeholder="enter your name"></td>
             </tr>
 
             <tr>
-                <td>Age:</td><td><input type="text" placeholder="enter your age"></td>
+                <td>Age:</td><td><input type="text" id="age" placeholder="enter your age"></td>
             </tr>
 
             <tr>
@@ -27,13 +27,13 @@
             </tr>
 
             <tr>
-                <td>Email:</td><td><input type="email" placeholder="enter your email"></td>
+                <td>Email:</td><td><input type="email" id="email" placeholder="enter your email"></td>
             </tr>
 
            <tr>
             <td>Location</td>
             <td>
-                <select>
+                <select id="location">
                     <option>Chennai</option>
                     <option>Delhi</option>
                     <option>Pondicherry</option>
@@ -55,6 +55,6 @@
         </table>
        </form> 
     </center>
-    
+    <script src="script.js"></script>
 </body>
 </html>
